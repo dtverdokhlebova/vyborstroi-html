@@ -1,0 +1,27 @@
+@import './utils/variables';
+@import './utils/keyframes';
+@import './utils/media';
+@import './utils/fonts';
+@import './utils/layout';
+
+// BLOCKS
+@import './blocks/_ui/ui-button';
+@import './blocks/_ui/_ui-form-name';
+@import './blocks/_ui/_ui-h2';
+@import './blocks/_ui/_ui-input';
+@import './blocks/_ui/_ui-range';
+@import './blocks/_ui/_ui-select';
+@import './blocks/_ui/_ui-swiper';
+@import './blocks/_ui/_ui-switch';
+@import './blocks/_banner';
+@import './blocks/_filter';
+@import './blocks/_flat';
+@import './blocks/_footer';
+@import './blocks/_gallery-popup';
+@import './blocks/_gallery';
+@import './blocks/_header';
+@import './blocks/_loader';
+@import './blocks/_location';
+@import './blocks/_popup';
+@import './blocks/_request-call';
+@import './blocks/_section';

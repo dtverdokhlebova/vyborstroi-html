@@ -1,0 +1,21 @@
+.section {
+  margin-top: 80px;
+  @include media-laptop {
+    margin-top: 60px;
+  }
+  @include media-tablet {
+    margin-top: 30px;
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+  &--ov-hidden {
+    overflow: hidden;
+  }
+  &--flat-banner {
+    background: $grey20;
+    @include media-tablet {
+      background: none;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.ui-h2 {
+  margin: 0;
+  font: 600 38px/1.2 $font;
+  @include media-laptop {
+    font-size: 30px;
+  }
+  @include media-tablet {
+    font-size: 20px;
+  }
+}

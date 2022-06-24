@@ -1,0 +1,67 @@
+.ui-range {
+  padding: 15px 40px 5px 20px;
+  background: $grey20;
+  border-radius: 9px;
+  @include media-tablet {
+    padding: 15px 20px 3px 15px;
+  }
+  &__head {
+    display: flex;
+    padding-bottom: 2px;
+    font: 500 19px/1.2 $font;
+    color: $grey80;
+    @include media-tablet {
+      font-size: 16px;
+    }
+  }
+  &__descr {
+    margin-right: 5px;
+  }
+  &__postfix {
+    margin-left: auto;
+  }
+  &__inp {
+    max-width: 80%;
+    input {
+      height: 1.2em;
+      padding: 0;
+      font: inherit;
+      color: inherit;
+      background: none;
+      border: 0;
+      border-radius: 0;
+      outline: none;
+      @include media-tablet {
+        font-size: 16px;
+      }
+    }
+  }
+  .noUi {
+    &-target {
+      height: 2px;
+      margin: 11px 0;
+      background: #c9c9c9;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    &-connect {
+      background: $blue;
+    }
+    &-handle {
+      top: -11px;
+      right: -11px;
+      width: 24px;
+      height: 24px;
+      background: #fff;
+      border: 0;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 1px 0 6px rgba(0, 0, 0, 0.17);
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

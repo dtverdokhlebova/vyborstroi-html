@@ -1,0 +1,74 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes from-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes to-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+@keyframes hvr-ripple-in {
+  25% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+  }
+}
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+@keyframes loader-jump {
+  0% {
+    transform: translate3d(calc((var(--loader-x) * var(--loader-radius)) * 1vmin), calc((var(--loader-y) * var(--loader-radius)) * -1vmin), 0);
+  }
+  15% {
+    transform: translate3d(calc((var(--loader-x) * var(--loader-radius)) * 1vmin), calc((var(--loader-y) * var(--loader-radius)) * -1vmin), 3.5vmin);
+  }
+  30% {
+    transform: translate3d(calc((var(--loader-x) * var(--loader-radius)) * 1vmin), calc((var(--loader-y) * var(--loader-radius)) * -1vmin), 0);
+  }
+  100% {
+    transform: translate3d(calc((var(--loader-x) * var(--loader-radius)) * 1vmin), calc((var(--loader-y) * var(--loader-radius)) * -1vmin), 0);
+  }
+}
+@keyframes loader-shadow {
+  0% {
+    transform: translate3d(calc((var(--loader-x) * var(--loader-radius)) * 1vmin), calc((var(--loader-y) * var(--loader-radius)) * -1vmin), calc(var(--loader-size) * -0.5vmin)) scale(1);
+  }
+  15% {
+    transform: translate3d(calc((var(--loader-x) * var(--loader-radius)) * 1vmin), calc((var(--loader-y) * var(--loader-radius)) * -1vmin), calc(var(--loader-size) * -0.5vmin)) scale(0.85);
+    opacity: 0.2;
+  }
+  30% {
+    transform: translate3d(calc((var(--loader-x) * var(--loader-radius)) * 1vmin), calc((var(--loader-y) * var(--loader-radius)) * -1vmin), calc(var(--loader-size) * -0.5vmin)) scale(1);
+  }
+  100% {
+    transform: translate3d(calc((var(--loader-x) * var(--loader-radius)) * 1vmin), calc((var(--loader-y) * var(--loader-radius)) * -1vmin), calc(var(--loader-size) * -0.5vmin)) scale(1);
+  }
+}

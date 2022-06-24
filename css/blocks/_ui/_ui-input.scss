@@ -1,0 +1,49 @@
+.ui-input {
+  position: relative;
+  &::before {
+    content: attr(data-error-text);
+    position: absolute;
+    top: 5px;
+    display: none;
+    font: 12px/1.2 $font;
+    color: $error;
+    @include media-tablet {
+      font-size: 10px;
+    }
+  }
+  input {
+    width: 100%;
+    padding: 10px 8px;
+    font: 12px/1.2 $font;
+    color: #9b9b9b;
+    background: transparent;
+    border: 1px solid #d7d7d7;
+    border-radius: 9px;
+    transition: 0.3s;
+    outline: none;
+    -webkit-appearance: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font: 15px/1.2 $font;
+    @include media-tablet {
+      font-size: 12px;
+    }
+  }
+  &--error {
+    &::before {
+      display: block;
+    }
+    label {
+      opacity: 0;
+    }
+    input {
+      color: $error;
+      border-color: $error;
+    }
+  }
+}

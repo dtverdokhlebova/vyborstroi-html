@@ -1,0 +1,32 @@
+:root {
+  --swiper-pagination-bullet-size: 18px;
+  @include media-laptop {
+    --swiper-pagination-bullet-size: 12px;
+  }
+  @include media-tablet {
+    --swiper-pagination-bullet-size: 6px;
+  }
+}
+.ui-swiper {
+  &-pagination {
+    .swiper-pagination {
+      position: relative;
+      bottom: 0;
+      &-bullet {
+        background: #fff;
+        opacity: 1;
+        &-active {
+          background: $blue;
+        }
+      }
+    }
+    &--grey {
+      .swiper-pagination-bullet {
+        background: #dcdada;
+        &-active {
+          background: $blue;
+        }
+      }
+    }
+  }
+}

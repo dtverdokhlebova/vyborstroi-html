@@ -1,0 +1,135 @@
+.banner {
+  @include media-tablet {
+    margin-top: 10px;
+    padding: 0 15px;
+  }
+  &__item {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    @include media-tablet {
+      width: 135px;
+      border-radius: 9px;
+      overflow: hidden;
+    }
+  }
+  &__inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 580px;
+    @include media-laptop {
+      height: 360px;
+    }
+    @include media-tablet {
+      height: 135px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 40px 10px 10px;
+      text-align: left;
+    }
+  }
+  &__title {
+    font: 700 81px/1.3 $font;
+    @include media-laptop {
+      font-size: 48px;
+    }
+    @include media-tablet {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1;
+    }
+  }
+  &__descr {
+    font: 500 35px/1.2 $font;
+    color: #e6e6e6;
+    @include media-laptop {
+      font-size: 22px;
+    }
+    @include media-tablet {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  }
+  &__ui {
+    &-button {
+      margin-top: 30px;
+      @include media-laptop {
+        margin-top: 15px;
+      }
+      @include media-tablet {
+        display: none;
+      }
+    }
+    &-swiper-pagination {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      width: 100%;
+      @include media-tablet {
+        display: none;
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    @include media-tablet {
+      display: none;
+    }
+    .inner {
+      position: relative;
+      height: 100%;
+    }
+    .swiper-button {
+      &-prev,
+      &-next {
+        --swiper-navigation-size: 34px;
+
+        pointer-events: all;
+        color: #fff;
+        transition: 0.3s;
+        @include media-laptop {
+          --swiper-navigation-size: 24px;
+        }
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+  .swiper {
+    @include media-tablet {
+      overflow: visible;
+    }
+    &-wrapper {
+      .inner {
+        @include media-tablet {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

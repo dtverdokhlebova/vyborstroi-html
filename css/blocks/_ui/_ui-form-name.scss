@@ -1,0 +1,10 @@
+.ui-form-name {
+  margin-bottom: 8px;
+  font: 500 14px/1.2 $font;
+  color: $grey30;
+  &__ui-range {
+    @include media-tablet {
+      display: none;
+    }
+  }
+}
