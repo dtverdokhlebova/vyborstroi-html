@@ -13,6 +13,7 @@
     overflow-y: auto;
     box-shadow: unset;
     border-radius: 0;
+    animation: fade-in 0.4s;
   }
   &__head {
     position: relative;
@@ -67,20 +68,20 @@
       input {
         display: none;
         &:checked + label {
-          background: $blue;
-          color: #fff;
+          border-color: $grey80;
         }
       }
       label {
         display: block;
         min-width: 120px;
-        padding: 12px 24px;
+        padding: 11px 23px;
         font: 500 16px/1.3 $font;
         text-align: center;
         color: $grey80;
         background: $grey20;
         border-radius: 30px;
         transition: 0.3s;
+        border: 1px solid  $grey20;
         cursor: pointer;
         @include media-tablet {
           min-width: 100px;
@@ -158,6 +159,9 @@
     border: 0;
     border-radius: 0;
     cursor: pointer;
+  }
+  &--active {
+    display: block;
   }
   &-open {
     position: relative;

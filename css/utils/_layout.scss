@@ -16,6 +16,11 @@ html {
 }
 body {
   margin: 0;
+  &.compensate-for-scrollbar {
+    .header {
+      padding-right: 8px;
+    }
+  }
 }
 a {
   transition: ease 0.3s;
@@ -62,4 +67,8 @@ img {
       padding-bottom: 30px;
     }
   }
+}
+
+@media (min-width: 1025px) {
+  @include scrollbar()
 }

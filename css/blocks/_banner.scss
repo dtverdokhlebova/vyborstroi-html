@@ -59,8 +59,12 @@
   &__ui {
     &-button {
       margin-top: 30px;
+      padding: 20px 58px;
+      font-size: 23px;
       @include media-laptop {
         margin-top: 15px;
+        font-size: 20px;
+        padding: 15px 45px;
       }
       @include media-tablet {
         display: none;

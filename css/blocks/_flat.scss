@@ -41,6 +41,12 @@
               }
             }
           }
+          &-dropdown {
+            min-width: 200px !important;
+            @include media-tablet {
+              min-width: 120px !important;
+            }
+          }
         }
       }
     }
@@ -228,11 +234,11 @@
       input {
         display: none;
         &:checked + label {
-          background: $blue;
-          color: #fff;
+          box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
           @include media-tablet {
             color: #4a4a4a;
             background: $grey10;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           }
         }
       }
@@ -755,7 +761,7 @@
     }
     &__payment {
       margin-bottom: 10px;
-      font: 13px/1.2 $font;
+      font: 14/1.2 $font;
       color: $grey40;
       @include media-laptop {
         font-size: 12px;
@@ -783,6 +789,7 @@
           font-size: 8px;
           color: #999;
           background: #efefef;
+          border-color: #efefef;
         }
       }
     }
@@ -807,7 +814,14 @@
       }
       &-payment {
         margin-bottom: 15px;
-        font: 500 11px/1.2 $font;
+        font: 500 14px/1.2 $font;
+        color: #8f8f8f;
+        @include media-laptop {
+          font-size: 12px;
+        }
+        @include media-tablet {
+          font-size: 9px;
+        }
       }
       &-foot {
         display: flex;

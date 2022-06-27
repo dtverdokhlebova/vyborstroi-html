@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
   bannerSlider()
   filter()
   testForm()
+  flatOtherSlider()
+  flatBannerSlider()
+  flatInfo()
+  locationMap()
 })
 
 window.addEventListener('resize', function () {
@@ -144,12 +148,23 @@ function filter() {
     $(this).parents('.filter').find('.filter__hidden').slideToggle()
   })
   $('.filter-open').on('click', function () {
-    $('.filter').fadeIn()
+    $('.filter').addClass('filter--active')
     $('html').addClass('ov-hidden')
   })
   $('.filter__close').on('click', function () {
-    $('.filter').fadeOut()
+    $('.filter').removeClass('filter--active')
     $('html').removeClass('ov-hidden')
+  })
+  $('.filter').on('reset', function () {
+    const ranges = document.querySelectorAll('.ui-range')
+    for (const range of ranges) {
+      const itemRange = range.querySelector('.ui-range-body')
+      const minInp = Number.parseInt(range.dataset.min, 10)      
+      itemRange.noUiSlider.set(minInp)
+    }
+    setTimeout(() => {
+      $(this).find(':input').trigger('change');
+    }, 1);
   })
 }
 
@@ -214,10 +229,8 @@ function getPopup(popup) {
       on: {
         done: (fancybox, slide) => {
           if (popupSrc === 'flat-inner-popup') {
-            flatOtherSlider()
-            flatBannerSlider()
-            flatInfo()
-            locationMap()
+            flatOtherSlider().update()
+            flatBannerSlider().update()
           }
         }
       }

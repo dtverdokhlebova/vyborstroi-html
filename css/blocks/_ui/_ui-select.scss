@@ -20,6 +20,10 @@
             padding: 16px 40px 18px 15px;
             font-size: 16px;
           }
+          &:focus,
+          &:focus-visible {
+            outline: none;
+          }
         }
         &__placeholder {
           color: inherit;
