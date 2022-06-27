@@ -66,11 +66,11 @@
         background: #fff;
       }
     }    
-    &.is-animated {
-      animation: 0.4s ease from-right;
-    }
-    &.is-closing {
-      animation: 0.4s ease to-right;
+    .fancybox-fadeIn {
+      animation: 0.4s ease both from-right;
+    }    
+    .fancybox-fadeOut {
+      animation: 0.4s ease both to-right;
     }
   }
   &--gallery {
@@ -79,11 +79,11 @@
       height: 100vh;
       padding: 0;
     }
-    &.is-animated {
-      animation: 0.4s ease from-right;
-    }
-    &.is-closing {
-      animation: 0.4s ease to-right;
+    .fancybox-fadeIn {
+      animation: 0.4s ease both from-right;
+    }    
+    .fancybox-fadeOut {
+      animation: 0.4s ease both to-right;
     }
   }
 }

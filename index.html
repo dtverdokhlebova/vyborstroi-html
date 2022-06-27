@@ -307,6 +307,7 @@
                   <button class="filter__reset" type="reset">Сбросить фильтры</button>
                 </div>
               </form>
+              <div class="flat-catalog__auxiliary"></div>
               <div class="flat-list">
                 <div class="flat-item">
                   <div class="flat-item__img"><img src="img/flat.webp" alt="" /></div>
@@ -509,259 +510,267 @@
       </div>
     </div>
     <div class="popup__wrapper" style="display: none;" id="flat-inner-popup">
-      <section class="section section--flat-banner">
-        <div class="inner">
-          <div class="flat-banner">
-            <div class="flat-banner__close js-close-popup"></div>
-            <div class="flat-banner__slider">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="img/flat2.webp" alt="" /></div>
-                  <div class="swiper-slide"><img src="img/flat.webp" alt="" /></div>
-                  <div class="swiper-slide"><img src="img/flat2.webp" alt="" /></div>
-                  <div class="swiper-slide"><img src="img/flat.webp" alt="" /></div>
-                  <div class="swiper-slide"><img src="img/flat2.webp" alt="" /></div>
-                  <div class="swiper-slide"><img src="img/flat.webp" alt="" /></div>
-                  <div class="swiper-slide"><img src="img/flat2.webp" alt="" /></div>
-                  <div class="swiper-slide"><img src="img/flat.webp" alt="" /></div>
-                </div>
-                <div class="ui-swiper-pagination flat-banner__ui-swiper-pagination ui-swiper-pagination--grey">
-                  <div class="swiper-pagination">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flat-banner__info">
-              <div class="flat-banner__title">3-комнатная 74,7 м² </div>
-              <div class="flat-banner__descr">
-                <p>ул. Шидловского, д. 5, кв. 100</p>
-                <p>Позиция 26, I кв. 2023</p>
-              </div>
-              <div class="flat-banner__price">5 079 600 ₽ </div>
-              <div class="flat-banner__payment">или 58 206 ₽ за м²</div>
-              <div class="flat-banner__tags">
-                <div class="flat-banner__tags-item">Чистовая</div>
-                <div class="flat-banner__tags-item">Заселение до 30 марта 2023 года</div>
-              </div>
-              <div class="flat-banner__mortgage">
-                <div class="flat-banner__mortgage-title">В ипотеку</div>
-                <div class="flat-banner__mortgage-payment">от 28 659 ₽ в месяц </div>
-                <div class="flat-banner__mortgage-foot">
-                  <div class="flat-banner__mortgage-views">125 сегодня</div>
-                  <div class="flat-banner__mortgage-btn">
-                    <a class="ui-button ui-button--link-next" href="#">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <a class="ui-button flat-banner__ui-button ui-button--ripple-out" href="javascript:void(0)"
-                data-type="request-call-popup" data-close-popup="false" onclick="window.getPopup($(this))">Заказать
-                звонок</a>
-            </div>
+      <div class="flat-inner">
+        <div class="flat-inner__head">
+          <div class="inner">
+            <div class="flat-inner__close js-close-popup"></div>
           </div>
         </div>
-      </section>
-      <section class="section">
-        <div class="inner">
-          <div class="flat-info">
-            <div class="flat-info__item">
-              <h2 class="ui-h2 flat-info__ui-h2">Общие данные
-              </h2>
-              <div class="flat-info__box">
-                <div class="flat-info__line">
-                  <div class="flat-info__line-inn">
-                    <div class="flat-info__prop">Этаж</div>
-                    <div class="flat-info__val">15 из 21</div>
-                  </div>
-                </div>
-                <div class="flat-info__line">
-                  <div class="flat-info__line-inn">
-                    <div class="flat-info__prop">Название комплекса</div>
-                    <div class="flat-info__val">Озерки</div>
-                  </div>
-                </div>
-                <div class="flat-info__line">
-                  <div class="flat-info__line-inn">
-                    <div class="flat-info__prop">Срок сдачи</div>
-                    <div class="flat-info__val">до 15 февраля 2021 года</div>
-                  </div>
-                </div>
-                <div class="flat-info__line flat-info__line--hidden">
-                  <div class="flat-info__line-inn">
-                    <div class="flat-info__prop">Значение 3</div>
-                    <div class="flat-info__val">15 из 21</div>
-                  </div>
-                </div>
-                <div class="flat-info__line flat-info__line--hidden">
-                  <div class="flat-info__line-inn">
-                    <div class="flat-info__prop">Значение 4</div>
-                    <div class="flat-info__val">15 из 21</div>
-                  </div>
-                </div>
-                <div class="flat-info__line flat-info__line--hidden">
-                  <div class="flat-info__line-inn">
-                    <div class="flat-info__prop">Значение 5</div>
-                    <div class="flat-info__val">15 из 21</div>
-                  </div>
-                </div>
-                <div class="flat-info__btn flat-info__btn--deskt"><span>Другие параметры</span></div>
-              </div>
-            </div>
-            <div class="flat-info__item flat-info__item--mob-hidden">
-              <h2 class="ui-h2 flat-info__ui-h2">Параметры квартиры
-              </h2>
-              <div class="flat-info__box">
-                <div class="flat-info__line">
-                  <div class="flat-info__line-inn">
-                    <div class="flat-info__prop">Номер квартиры</div>
-                    <div class="flat-info__val">20</div>
-                  </div>
-                </div>
-                <div class="flat-info__line">
-                  <div class="flat-info__line-inn">
-                    <div class="flat-info__prop">Кол-во комнат</div>
-                    <div class="flat-info__val">3</div>
-                  </div>
-                </div>
-                <div class="flat-info__line">
-                  <div class="flat-info__line-inn">
-                    <div class="flat-info__prop">Общая площадь</div>
-                    <div class="flat-info__val">74,7 м2</div>
-                  </div>
-                </div>
-                <div class="flat-info__line flat-info__line--hidden">
-                  <div class="flat-info__line-inn">
-                    <div class="flat-info__prop">Значение 3</div>
-                    <div class="flat-info__val">3</div>
-                  </div>
-                </div>
-                <div class="flat-info__line flat-info__line--hidden">
-                  <div class="flat-info__line-inn">
-                    <div class="flat-info__prop">Значение 4</div>
-                    <div class="flat-info__val">3</div>
-                  </div>
-                </div>
-                <div class="flat-info__btn flat-info__btn--deskt"><span>Другие параметры</span></div>
-              </div>
-            </div>
-            <div class="flat-info__btn flat-info__btn--mob"><span>Другие параметры</span></div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="inner">
-          <div class="gallery">
-            <h2 class="ui-h2 gallery__ui-h2">Фото квартиры, этажа
-            </h2>
-            <div class="gallery__wrapper">
-              <a class="gallery__item gallery__item--big" href="javascript:void(0)" data-type="gallery-popup"
-                data-close-popup="true" onclick="window.getPopup($(this))">
-                <img src="img/gallery1.webp" alt="" />
-              </a>
-              <a class="gallery__item" href="javascript:void(0)" data-type="gallery-popup" data-close-popup="true"
-                onclick="window.getPopup($(this))">
-                <img src="img/gallery2.webp" alt="" />
-              </a>
-              <a class="gallery__item" href="javascript:void(0)" data-type="gallery-popup" data-close-popup="true"
-                onclick="window.getPopup($(this))">
-                <img src="img/gallery3.webp" alt="" />
-                <div class="gallery__more">+4</div>
-              </a>
-              <a class="gallery__item" href="javascript:void(0)" data-type="gallery-popup" data-close-popup="true"
-                onclick="window.getPopup($(this))">
-                <img src="img/gallery4.webp" alt="" />
-              </a>
-              <a class="gallery__item" href="javascript:void(0)" data-type="gallery-popup" data-close-popup="true"
-                onclick="window.getPopup($(this))">
-                <img src="img/gallery5.webp" alt="" />
-                <div class="gallery__more">+2</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="inner">
-          <div class="location">
-            <div class="location__head">
-              <h2 class="ui-h2 location__ui-h2">Местоположение
-              </h2>
-              <div class="location__descr">Корпус 3.2.2 , секция 2</div>
-            </div>
-            <div class="location__map" id="locationMap" data-coords-lat="51.678649" data-coords-lng="39.132464"></div>
-          </div>
-        </div>
-      </section>
-      <section class="section section--ov-hidden">
-        <div class="inner">
-          <div class="flat-other">
-            <h2 class="ui-h2 flat-other__ui-h2">Похожие квартиры
-            </h2>
-            <div class="flat-other__slider">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <a class="flat-other__item swiper-slide" href="#">
-                    <div class="flat-other__img"><img src="img/flat.webp" alt="" /></div>
-                    <div class="flat-other__text">
-                      <div class="flat-other__title">3-комнатная 74,7 м² <b>0</b></div>
-                      <div class="flat-other__descr">
-                        <p>ул. Шидловского, д. 5, кв. 100</p>
-                        <p>Позиция 26, I кв. 2023</p>
-                      </div>
-                      <div class="flat-other__price">5 079 600 ₽ </div>
-                      <div class="flat-other__payment">или 58 206 ₽ за м²</div>
-                      <span
-                        class="ui-button flat-other__ui-button ui-button--white ui-button--ripple-in">Подробнее</span>
+        <div class="flat-inner__main">
+          <section class="section section--flat-banner">
+            <div class="inner">
+              <div class="flat-banner">
+                <div class="flat-banner__slider">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="img/flat2.webp" alt="" /></div>
+                      <div class="swiper-slide"><img src="img/flat.webp" alt="" /></div>
+                      <div class="swiper-slide"><img src="img/flat2.webp" alt="" /></div>
+                      <div class="swiper-slide"><img src="img/flat.webp" alt="" /></div>
+                      <div class="swiper-slide"><img src="img/flat2.webp" alt="" /></div>
+                      <div class="swiper-slide"><img src="img/flat.webp" alt="" /></div>
+                      <div class="swiper-slide"><img src="img/flat2.webp" alt="" /></div>
+                      <div class="swiper-slide"><img src="img/flat.webp" alt="" /></div>
                     </div>
+                    <div class="ui-swiper-pagination flat-banner__ui-swiper-pagination ui-swiper-pagination--grey">
+                      <div class="swiper-pagination">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flat-banner__info">
+                  <div class="flat-banner__title">3-комнатная 74,7 м² </div>
+                  <div class="flat-banner__descr">
+                    <p>ул. Шидловского, д. 5, кв. 100</p>
+                    <p>Позиция 26, I кв. 2023</p>
+                  </div>
+                  <div class="flat-banner__price">5 079 600 ₽ </div>
+                  <div class="flat-banner__payment">или 58 206 ₽ за м²</div>
+                  <div class="flat-banner__tags">
+                    <div class="flat-banner__tags-item">Чистовая</div>
+                    <div class="flat-banner__tags-item">Заселение до 30 марта 2023 года</div>
+                  </div>
+                  <div class="flat-banner__mortgage">
+                    <div class="flat-banner__mortgage-title">В ипотеку</div>
+                    <div class="flat-banner__mortgage-payment">от 28 659 ₽ в месяц </div>
+                    <div class="flat-banner__mortgage-foot">
+                      <div class="flat-banner__mortgage-views">125 сегодня</div>
+                      <div class="flat-banner__mortgage-btn">
+                        <a class="ui-button ui-button--link-next" href="#">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="ui-button flat-banner__ui-button ui-button--ripple-out" href="javascript:void(0)"
+                    data-type="request-call-popup" data-close-popup="false" onclick="window.getPopup($(this))">Заказать
+                    звонок</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section">
+            <div class="inner">
+              <div class="flat-info">
+                <div class="flat-info__item">
+                  <h2 class="ui-h2 flat-info__ui-h2">Общие данные
+                  </h2>
+                  <div class="flat-info__box">
+                    <div class="flat-info__line">
+                      <div class="flat-info__line-inn">
+                        <div class="flat-info__prop">Этаж</div>
+                        <div class="flat-info__val">15 из 21</div>
+                      </div>
+                    </div>
+                    <div class="flat-info__line">
+                      <div class="flat-info__line-inn">
+                        <div class="flat-info__prop">Название комплекса</div>
+                        <div class="flat-info__val">Озерки</div>
+                      </div>
+                    </div>
+                    <div class="flat-info__line">
+                      <div class="flat-info__line-inn">
+                        <div class="flat-info__prop">Срок сдачи</div>
+                        <div class="flat-info__val">до 15 февраля 2021 года</div>
+                      </div>
+                    </div>
+                    <div class="flat-info__line flat-info__line--hidden">
+                      <div class="flat-info__line-inn">
+                        <div class="flat-info__prop">Значение 3</div>
+                        <div class="flat-info__val">15 из 21</div>
+                      </div>
+                    </div>
+                    <div class="flat-info__line flat-info__line--hidden">
+                      <div class="flat-info__line-inn">
+                        <div class="flat-info__prop">Значение 4</div>
+                        <div class="flat-info__val">15 из 21</div>
+                      </div>
+                    </div>
+                    <div class="flat-info__line flat-info__line--hidden">
+                      <div class="flat-info__line-inn">
+                        <div class="flat-info__prop">Значение 5</div>
+                        <div class="flat-info__val">15 из 21</div>
+                      </div>
+                    </div>
+                    <div class="flat-info__btn flat-info__btn--deskt"><span>Другие параметры</span></div>
+                  </div>
+                </div>
+                <div class="flat-info__item flat-info__item--mob-hidden">
+                  <h2 class="ui-h2 flat-info__ui-h2">Параметры квартиры
+                  </h2>
+                  <div class="flat-info__box">
+                    <div class="flat-info__line">
+                      <div class="flat-info__line-inn">
+                        <div class="flat-info__prop">Номер квартиры</div>
+                        <div class="flat-info__val">20</div>
+                      </div>
+                    </div>
+                    <div class="flat-info__line">
+                      <div class="flat-info__line-inn">
+                        <div class="flat-info__prop">Кол-во комнат</div>
+                        <div class="flat-info__val">3</div>
+                      </div>
+                    </div>
+                    <div class="flat-info__line">
+                      <div class="flat-info__line-inn">
+                        <div class="flat-info__prop">Общая площадь</div>
+                        <div class="flat-info__val">74,7 м2</div>
+                      </div>
+                    </div>
+                    <div class="flat-info__line flat-info__line--hidden">
+                      <div class="flat-info__line-inn">
+                        <div class="flat-info__prop">Значение 3</div>
+                        <div class="flat-info__val">3</div>
+                      </div>
+                    </div>
+                    <div class="flat-info__line flat-info__line--hidden">
+                      <div class="flat-info__line-inn">
+                        <div class="flat-info__prop">Значение 4</div>
+                        <div class="flat-info__val">3</div>
+                      </div>
+                    </div>
+                    <div class="flat-info__btn flat-info__btn--deskt"><span>Другие параметры</span></div>
+                  </div>
+                </div>
+                <div class="flat-info__btn flat-info__btn--mob"><span>Другие параметры</span></div>
+              </div>
+            </div>
+          </section>
+          <section class="section">
+            <div class="inner">
+              <div class="gallery">
+                <h2 class="ui-h2 gallery__ui-h2">Фото квартиры, этажа
+                </h2>
+                <div class="gallery__wrapper">
+                  <a class="gallery__item gallery__item--big" href="javascript:void(0)" data-type="gallery-popup"
+                    data-close-popup="true" onclick="window.getPopup($(this))">
+                    <img src="img/gallery1.webp" alt="" />
                   </a>
-                  <a class="flat-other__item swiper-slide" href="#">
-                    <div class="flat-other__img"><img src="img/flat.webp" alt="" /></div>
-                    <div class="flat-other__text">
-                      <div class="flat-other__title">3-комнатная 74,7 м² <b>1</b></div>
-                      <div class="flat-other__descr">
-                        <p>ул. Шидловского, д. 5, кв. 100</p>
-                        <p>Позиция 26, I кв. 2023</p>
-                      </div>
-                      <div class="flat-other__price">5 079 600 ₽ </div>
-                      <div class="flat-other__payment">или 58 206 ₽ за м²</div>
-                      <span
-                        class="ui-button flat-other__ui-button ui-button--white ui-button--ripple-in">Подробнее</span>
-                    </div>
+                  <a class="gallery__item" href="javascript:void(0)" data-type="gallery-popup" data-close-popup="true"
+                    onclick="window.getPopup($(this))">
+                    <img src="img/gallery2.webp" alt="" />
                   </a>
-                  <a class="flat-other__item swiper-slide" href="#">
-                    <div class="flat-other__img"><img src="img/flat.webp" alt="" /></div>
-                    <div class="flat-other__text">
-                      <div class="flat-other__title">3-комнатная 74,7 м² <b>2</b></div>
-                      <div class="flat-other__descr">
-                        <p>ул. Шидловского, д. 5, кв. 100</p>
-                        <p>Позиция 26, I кв. 2023</p>
-                      </div>
-                      <div class="flat-other__price">5 079 600 ₽ </div>
-                      <div class="flat-other__payment">или 58 206 ₽ за м²</div>
-                      <span
-                        class="ui-button flat-other__ui-button ui-button--white ui-button--ripple-in">Подробнее</span>
-                    </div>
+                  <a class="gallery__item" href="javascript:void(0)" data-type="gallery-popup" data-close-popup="true"
+                    onclick="window.getPopup($(this))">
+                    <img src="img/gallery3.webp" alt="" />
+                    <div class="gallery__more">+4</div>
                   </a>
-                  <a class="flat-other__item swiper-slide" href="#">
-                    <div class="flat-other__img"><img src="img/flat.webp" alt="" /></div>
-                    <div class="flat-other__text">
-                      <div class="flat-other__title">3-комнатная 74,7 м² <b>3</b></div>
-                      <div class="flat-other__descr">
-                        <p>ул. Шидловского, д. 5, кв. 100</p>
-                        <p>Позиция 26, I кв. 2023</p>
-                      </div>
-                      <div class="flat-other__price">5 079 600 ₽ </div>
-                      <div class="flat-other__payment">или 58 206 ₽ за м²</div>
-                      <span
-                        class="ui-button flat-other__ui-button ui-button--white ui-button--ripple-in">Подробнее</span>
-                    </div>
+                  <a class="gallery__item" href="javascript:void(0)" data-type="gallery-popup" data-close-popup="true"
+                    onclick="window.getPopup($(this))">
+                    <img src="img/gallery4.webp" alt="" />
+                  </a>
+                  <a class="gallery__item" href="javascript:void(0)" data-type="gallery-popup" data-close-popup="true"
+                    onclick="window.getPopup($(this))">
+                    <img src="img/gallery5.webp" alt="" />
+                    <div class="gallery__more">+2</div>
                   </a>
                 </div>
-                <div class="flat-other__btn"></div>
               </div>
             </div>
-          </div>
+          </section>
+          <section class="section">
+            <div class="inner">
+              <div class="location">
+                <div class="location__head">
+                  <h2 class="ui-h2 location__ui-h2">Местоположение
+                  </h2>
+                  <div class="location__descr">Корпус 3.2.2 , секция 2</div>
+                </div>
+                <div class="location__map" id="locationMap" data-coords-lat="51.678649" data-coords-lng="39.132464"></div>
+              </div>
+            </div>
+          </section>
+          <section class="section section--ov-hidden">
+            <div class="inner">
+              <div class="flat-other">
+                <h2 class="ui-h2 flat-other__ui-h2">Похожие квартиры
+                </h2>
+                <div class="flat-other__slider">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <a class="flat-other__item swiper-slide" href="#">
+                        <div class="flat-other__img"><img src="img/flat.webp" alt="" /></div>
+                        <div class="flat-other__text">
+                          <div class="flat-other__title">3-комнатная 74,7 м² <b>0</b></div>
+                          <div class="flat-other__descr">
+                            <p>ул. Шидловского, д. 5, кв. 100</p>
+                            <p>Позиция 26, I кв. 2023</p>
+                          </div>
+                          <div class="flat-other__price">5 079 600 ₽ </div>
+                          <div class="flat-other__payment">или 58 206 ₽ за м²</div>
+                          <span
+                            class="ui-button flat-other__ui-button ui-button--white ui-button--ripple-in">Подробнее</span>
+                        </div>
+                      </a>
+                      <a class="flat-other__item swiper-slide" href="#">
+                        <div class="flat-other__img"><img src="img/flat.webp" alt="" /></div>
+                        <div class="flat-other__text">
+                          <div class="flat-other__title">3-комнатная 74,7 м² <b>1</b></div>
+                          <div class="flat-other__descr">
+                            <p>ул. Шидловского, д. 5, кв. 100</p>
+                            <p>Позиция 26, I кв. 2023</p>
+                          </div>
+                          <div class="flat-other__price">5 079 600 ₽ </div>
+                          <div class="flat-other__payment">или 58 206 ₽ за м²</div>
+                          <span
+                            class="ui-button flat-other__ui-button ui-button--white ui-button--ripple-in">Подробнее</span>
+                        </div>
+                      </a>
+                      <a class="flat-other__item swiper-slide" href="#">
+                        <div class="flat-other__img"><img src="img/flat.webp" alt="" /></div>
+                        <div class="flat-other__text">
+                          <div class="flat-other__title">3-комнатная 74,7 м² <b>2</b></div>
+                          <div class="flat-other__descr">
+                            <p>ул. Шидловского, д. 5, кв. 100</p>
+                            <p>Позиция 26, I кв. 2023</p>
+                          </div>
+                          <div class="flat-other__price">5 079 600 ₽ </div>
+                          <div class="flat-other__payment">или 58 206 ₽ за м²</div>
+                          <span
+                            class="ui-button flat-other__ui-button ui-button--white ui-button--ripple-in">Подробнее</span>
+                        </div>
+                      </a>
+                      <a class="flat-other__item swiper-slide" href="#">
+                        <div class="flat-other__img"><img src="img/flat.webp" alt="" /></div>
+                        <div class="flat-other__text">
+                          <div class="flat-other__title">3-комнатная 74,7 м² <b>3</b></div>
+                          <div class="flat-other__descr">
+                            <p>ул. Шидловского, д. 5, кв. 100</p>
+                            <p>Позиция 26, I кв. 2023</p>
+                          </div>
+                          <div class="flat-other__price">5 079 600 ₽ </div>
+                          <div class="flat-other__payment">или 58 206 ₽ за м²</div>
+                          <span
+                            class="ui-button flat-other__ui-button ui-button--white ui-button--ripple-in">Подробнее</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="flat-other__btn"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
     </div>
     <div class="popup__wrapper" style="display: none;" id="gallery-popup">
       <div class="gallery-popup">

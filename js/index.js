@@ -15,10 +15,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('resize', function () {
   headerHeight()
+
+  if ($('.filter').hasClass('filter--active')) {
+    $(this).removeClass('filter--active')
+    $('html').removeClass('ov-hidden')
+  }
+  $('.filter').css('transform', '')
 }, true)
 
+$(window).on('scroll', function() {
+  if ($(window).width() > 767) {
+    const filter = $('.filter')
+    const filterLine = $('.flat-catalog__auxiliary')
+    const filterLineTop = filterLine.offset().top
+    const filterLineHeight = filterLine.innerHeight()
+    const filterLineBot = filterLineTop + filterLineHeight
+    const filterTop = filter.offset().top;
+    const filterHeight= filter.innerHeight()
+    const filterBot = filterTop + filterHeight
+    
+    if ((filterLineBot - filterLineTop) < (filterBot - filterTop)) {
+      const topPos = filterLineTop - $('.flat-catalog__main').offset().top
+      const botPos = topPos + filterLineHeight;    
+      const heirz = botPos - filterHeight    
+      if (filterLineBot >= filterBot) {
+        filter.css('transform', `translate(0px, ${heirz}px)`)
+      }
+      if (filterTop >= filterLineTop) {
+        filter.css('transform', `translate(0px, ${topPos}px)`)
+      }
+    }
+  }
+})
+
 function headerHeight() {
-  document.documentElement.style.setProperty('--header-height', `${document.querySelector('.header').offsetHeight}px`)
+  const propVal = document.querySelector('.header').offsetHeight - 1
+  document.documentElement.style.setProperty('--header-height', `${propVal}px`)
 }
 
 function uiSelects() {

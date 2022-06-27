@@ -7,19 +7,16 @@
   }
 }
 @keyframes from-right {
-  0% {
+  from {
     transform: translateX(100%);
   }
-  100% {
+  to {
     transform: translateX(0);
   }
 }
 @keyframes to-right {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(200%);
+  to {
+    transform: translateX(100%);
   }
 }
 @keyframes hvr-ripple-in {
